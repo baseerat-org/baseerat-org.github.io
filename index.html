@@ -97,6 +97,22 @@
       margin-top: 40px;
     }
 
+    /* Styling for the contact email link */
+    .contact-email {
+      color: #009688;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 2px solid #009688;
+      border-radius: 5px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .contact-email:hover {
+      background: #009688;
+      color: #fff;
+    }
+
     /* RESPONSIVE ADJUSTMENTS */
     @media (max-width: 600px) {
       h1 {
@@ -123,7 +139,6 @@
   </header>
 
   <div class="container">
-
     <!-- INTRO SECTION -->
     <div class="intro">
       <p>
@@ -141,7 +156,6 @@
 
     <!-- SIGNUP SECTION -->
     <div class="btn-group">
-      <!-- Replace these links with your actual Google Form links -->
       <a href="https://forms.gle/DMV78eyefRrD81Gp7" target="_blank">Teacher Signup (اساتذہ کی رجسٹریشن)</a>
       <a href="https://forms.gle/brzgr4Nbbks5a3YJA" target="_blank">Student Signup (طلبہ کی رجسٹریشن)</a>
       <a href="https://forms.gle/TxJqxK94ZN6VeeAc7" target="_blank">Ambassador Signup (سفیر کی رجسٹریشن)</a>
@@ -170,36 +184,24 @@
     </p>
     <!-- END MISSION SECTION -->
 
+    <!-- STYLED CONTACT EMAIL -->
     <div class="intro">
       <p>
-        Contact: baseerat.help@gmail.com
+        Contact: 
+        <a href="mailto:baseerat.help@gmail.com" class="contact-email">
+          baseerat.help@gmail.com
+        </a>
       </p>
     </div>
 
     <!-- FEEDBACK FORM SECTION -->
     <div class="feedback-section">
-      <!-- Option A: Direct Link to Feedback Form -->
       <p>
         <a href="https://forms.gle/264hgJMQoEFZY4Ag9" target="_blank" 
            style="background: #009688; padding: 10px 20px; color: #fff; border-radius: 5px; text-decoration: none;">
           Go to Feedback Form
         </a>
       </p>
-
-      <!-- 
-      Option B: Embed the form (requires the full "Embed HTML" from Google Forms, 
-      which is different from the short link). Uncomment and replace src with your embed link if you want to embed.
-
-      <iframe 
-        src="YOUR_GOOGLE_FORM_EMBED_LINK_HERE" 
-        width="640" 
-        height="800" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0">
-        Loading…
-      </iframe>
-      -->
     </div>
     <!-- END FEEDBACK FORM SECTION -->
 
